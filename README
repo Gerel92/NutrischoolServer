@@ -23,8 +23,13 @@ Il suffit de l'importer et tester les differentes requetes.
    ```sh
    npm install
    ```
+4. Générer le schéma de la base de données :
 
-4. Démarrer le serveur en mode développement :
+   ```sh
+    npx prisma migrate dev
+   ```
+
+5. Démarrer le serveur en mode développement :
 
    ```sh
    npm run dev
