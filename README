@@ -1,0 +1,44 @@
+# Projet de Nutrishchool
+
+## Description
+Ce projet est un serveur Node.js utilisant Hono pour la gestion des routes et Prisma comme ORM. La base de données utilisée est SQLite pour simplifier le développement et elle se trouve dans le fichier `prisma/dev.db`.
+
+## TEST
+
+Pour tester les differentes requetes, vous pouvez utiliser l'outil [Hoppscotch](https://hoppscotch.io/) ou directement sur le navigateur. J'ai exporter mes differentes requetes dans le json qui dans le dossier docs.
+Il suffit de l'importer et tester les differentes requetes.
+
+## Installation
+
+1. Cloner le dépôt
+
+2. Copier le fichier `.env.example` en `.env` :
+
+   ```sh
+   cp .env.example .env
+   ```
+
+3. Installer les dépendances :
+
+   ```sh
+   npm install
+   ```
+
+4. Démarrer le serveur en mode développement :
+
+   ```sh
+   npm run dev
+   ```
+
+Le serveur sera lancé sur le port `3000`. Vous pouvez y accéder à l'adresse [http://localhost:3000](http://localhost:3000).
+
+## Structure du Projet
+
+- `prisma/`
+  - `schema.prisma` : Le schéma de la base de données.
+  - `dev.db` : La base de données SQLite.
+
+## Technologies Utilisées
+
+- [Hono](https://github.com/honojs/hono) : Un micro-framework pour Node.js.
+- [Prisma](https://www.prisma.io/) : Un ORM moderne et performant.
