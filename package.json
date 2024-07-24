@@ -1,22 +1,20 @@
 {
+  "name": "nutrischoolserver",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
   "dependencies": {
+    "@hono/node-server": "^1.12.0",
+    "@hono/zod-validator": "^0.2.2",
+    "@prisma/client": "^5.17.0",
     "bcrypt": "^5.1.1",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.10.2"
+    "envalid": "^8.0.0",
+    "hono": "^4.5.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
-  },
-  "name": "nutrischoolserver",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "devStart": "nodemon server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.11.17",
+    "prisma": "^5.17.0",
+    "tsx": "^4.7.1"
+  }
 }
